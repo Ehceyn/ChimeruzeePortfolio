@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: local('GT Walsheim Pro Condensed Black'), local('GT-Walsheim-Pro-Condensed-Black'),
+        url('GTWalsheimPro-CondensedBlack.woff2') format('woff2'),
+        url('GTWalsheimPro-CondensedBlack.woff') format('woff'),
+        url('GTWalsheimPro-CondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }

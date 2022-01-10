@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background: rgb(27, 27, 27);
+  color: rgb(197, 196, 196);
 }
 
 .main {
@@ -29,7 +31,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #e20c4d;
   text-decoration: none;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #4e4d4d41;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -88,8 +90,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #e20c4d;
+  border-color: #e20c4d;
 }
 
 .card h2 {
