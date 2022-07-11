@@ -1,0 +1,171 @@
+@font-face {
+  font-family: GTWalsheimPro;
+  src: url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf); /* IE9 Compat Modes */
+  src: url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf?iefix)
+      format("embedded-opentype") /* IE6-IE8 */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.woff)
+      format("woff") /* Super Modern Browsers */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.woff2)
+      format("woff2") /* Pretty Modern Browsers */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf)
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sintony-Bold;
+  src: url(/fonts/Sintony/Sintony-Bold.ttf); /* IE9 Compat Modes */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sintony-Regular;
+  src: url(/fonts/Sintony/Sintony-Regular.ttf); /* IE9 Compat Modes */
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: black;
+}
+body {
+  font-family: Sintony-Regular, "Segoe UI", sans-serif;
+  font-size: 1.6rem;
+  background: black;
+  color: #ccc;
+  cursor: default;
+  max-width: 1700px;
+  margin: auto;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  font-size: 5em;
+  color: gray;
+  background: -webkit-linear-gradient(180deg, #0070fdff, #d50098ff, #fd2828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-wrap: wrap;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 3em;
+  color: gray;
+  background: -webkit-linear-gradient(180deg, #0070fdff, #d50098ff, #fd2828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-wrap: wrap;
+}
+h3 {
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.2;
+  color: #999;
+}
+
+h4 {
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 0.8em;
+  color: #999;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h5,
+h6,
+button {
+  font-family: GTWalsheimPro, "Segoe UI", sans-serif;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+nav .navlinks {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: inherit;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+nav .navlinks:focus {
+  color: #0070fdff;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.sectionStyle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 30px 100px;
+}
+
+/* Linear Gradient background for hero image */
+.background {
+  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
+}
+/* Linear Gradient Border for hero image */
+.border-gradient {
+  background: linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828) border-box,
+    linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828) padding-box;
+}
+
+.hero {
+  position: relative;
+  background: url("/images/meruz-bw.jpg") no-repeat center/cover;
+  z-index: 3;
+}
+
+.hero::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.95;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+/* 
+   accent1: "hsl(34.9,98.6%,72.9%)",
+    button: "hsl(205.1,100%,36.1%)",
+    background2: "hsl(232.7,27.3%,23.7%)", */
