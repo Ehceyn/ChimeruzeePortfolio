@@ -10,11 +10,20 @@ function About() {
         </article>
         <div className="absolute top-0 left-0">
           <div className="flex">
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
           </div>
           <div>
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
           </div>
         </div>
         <div className="w-full flex justify-center">
@@ -30,11 +39,20 @@ function About() {
         </div>
         <div className="absolute bottom-0 right-0">
           <div className="w-full flex justify-end">
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
           </div>
           <div className="flex">
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
-            <CgMenuGridO className="text-[80px] md2:text-[120px] text-[#46444456]" />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
+            <CgMenuGridO
+              fontSize="80px"
+              className="text-[80px] md2:text-[120px] text-[#46444456]"
+            />
           </div>
         </div>
       </div>
