@@ -4,12 +4,12 @@ import Image from "next/image";
 function Projects() {
   return (
     <section className="md2:px-[70px] mt-20">
-      <div className=" w-full min-h-[80vh] bg-[#2020205b] md2:rounded-3xl py-20">
+      <div className=" w-full min-h-[80vh] bg-[#2020205b] rounded-3xl py-20">
         <article className="w-full flex justify-center mb-10 md:mb-20">
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">PROJECTS</h2>
         </article>
         {/* All project cards */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 px-10 md:px-20">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-10 px-10">
           {[
             { src: "/images/test1.jpg", name: "HTML" },
             { src: "/images/test2.jpg", name: "CSS" },
@@ -20,18 +20,18 @@ function Projects() {
           ].map((r) => (
             <div
               key={r.name}
-              className="group bg-black w-full h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
+              className="group max-w-lg bg-black w-[512px] h-[400px]  overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
             >
-              {/* <a href="#"> */}
-              <Image
-                className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
-                src={r.src}
-                alt=""
-                width={600}
-                height={1050}
-                objectFit="cover"
-              />
-              {/* </a> */}
+              <a href="#">
+                <Image
+                  className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
+                  src={r.src}
+                  alt=""
+                  width={500}
+                  height={700}
+                  objectFit="cover"
+                />
+              </a>
               {/* <div className="p-5">
                 <a href="#">
                   <h4 className="mb-2 text-2xl font-bold tracking-tight">

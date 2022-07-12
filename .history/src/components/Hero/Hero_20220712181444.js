@@ -34,7 +34,7 @@ function Hero() {
         <h1 className="text-7xl md2:text-8xl lg:text-9xl">
           I&apos;m Chimeruzee.
         </h1>
-        <h4 className="flex items-center w-fit max-w-[800px] h-fit py-5 text-2xl md2:text-2xl px-5">
+        <h4 className="flex items-center w-fit max-w-[800px] h-fit py-5 text-2xl md2:text-2xl">
           I&apos;m a creative Frontend developer. An innovative and good team
           player who loves going extra mile to deliver a project. I make things
           work.

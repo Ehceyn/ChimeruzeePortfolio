@@ -28,7 +28,7 @@ function Projects() {
                 src={r.src}
                 alt=""
                 width={600}
-                height={1050}
+                height={1000}
                 objectFit="cover"
               />
               {/* </a> */}

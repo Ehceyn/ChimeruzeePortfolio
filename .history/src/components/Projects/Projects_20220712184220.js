@@ -20,15 +20,15 @@ function Projects() {
           ].map((r) => (
             <div
               key={r.name}
-              className="group bg-black w-full h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
+              className="group max-w-[390px] bg-black w-full h-[500px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
             >
               {/* <a href="#"> */}
               <Image
                 className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
                 src={r.src}
                 alt=""
-                width={600}
-                height={1050}
+                width={400}
+                height={700}
                 objectFit="cover"
               />
               {/* </a> */}

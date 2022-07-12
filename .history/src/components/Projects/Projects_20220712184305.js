@@ -20,7 +20,7 @@ function Projects() {
           ].map((r) => (
             <div
               key={r.name}
-              className="group bg-black w-full h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
+              className="group bg-black w-full h-[500px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
             >
               {/* <a href="#"> */}
               <Image
@@ -28,7 +28,7 @@ function Projects() {
                 src={r.src}
                 alt=""
                 width={600}
-                height={1050}
+                height={1000}
                 objectFit="cover"
               />
               {/* </a> */}

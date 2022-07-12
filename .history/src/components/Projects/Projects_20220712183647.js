@@ -27,8 +27,8 @@ function Projects() {
                 className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
                 src={r.src}
                 alt=""
-                width={600}
-                height={1050}
+                width={700}
+                height={700}
                 objectFit="cover"
               />
               {/* </a> */}

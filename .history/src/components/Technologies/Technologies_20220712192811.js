@@ -8,7 +8,7 @@ function Technologies() {
         <article className="w-full flex justify-center mb-10 md:mb-20">
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">TECHNOLOGIES</h2>
         </article>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md2:grid-cols-4 gap-x-4 gap-y-10 px-5">
+        <div className="w-full grid grid-cols-2 md2:grid-cols-4 gap-x-4 gap-y-10 px-10">
           {[
             { src: "/images/html.png", name: "HTML" },
             { src: "/images/css.png", name: "CSS" },
@@ -25,7 +25,7 @@ function Technologies() {
           ].map((r, index) => (
             <div
               key={r.name}
-              className="group flex flex-col justify-center items-center bg-[#2020205b] py-7 px-12 rounded-lg shadow-md mx-auto"
+              className="group flex flex-col justify-center items-center bg-[#2020205b] py-10 px-16 rounded-lg shadow-md mx-auto"
             >
               <Image
                 src={r.src || "/images/GraphQL-logo.png"}

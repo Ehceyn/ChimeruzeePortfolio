@@ -10,7 +10,7 @@ function About() {
             <h2 className="text-5xl md2:text-6xl lg:text-8xl">ABOUT ME</h2>
           </article>
           <div className="w-full flex justify-center">
-            <h4 className="text-[#999] text-2xl w-[400px] text-center px-5 md2:px-0">
+            <h4 className="text-[#999] text-2xl w-[400px] sm:text-center px-5 md2:px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam nemo eveniet autem libero praesentium sit assumenda est
               deleniti exercitationem dolorem accusamus voluptates maxime

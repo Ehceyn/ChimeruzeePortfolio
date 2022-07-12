@@ -12,7 +12,7 @@ function Contact() {
 
         <div className="flex flex-col md2:flex-row w-full items-center md2:justify-center space-y-10 md2:space-y-0 md2:space-x-32 lg:space-x-64">
           {/* Form Starts*/}
-          <div className="  md:w-[400px] w-full">
+          <div className=" w-full">
             <form className="">
               <div className="mb-6">
                 <label htmlFor="name" className="block mb-2">
@@ -70,7 +70,7 @@ function Contact() {
           </div>
 
           <article className="flex">
-            <div className=" md:w-[400px] w-full">
+            <div className="w-full">
               <article className="text-[2.2em] md2:text-[2.7em] lg:text-[3em] font-extrabold font-[GTWalsheimPro] ">
                 Get In Touch
               </article>

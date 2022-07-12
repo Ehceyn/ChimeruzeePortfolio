@@ -4,15 +4,15 @@ import { MdLocationOn, MdLocalPhone, MdEmail } from "react-icons/md";
 
 function Contact() {
   return (
-    <section className=" w-full min-h-[80vh] h-fit mb-20 ">
-      <div className="w-full  py-20 px-10 md2:px-[70px] min-h-[80vh] bg-[#2020205b] h-fit">
+    <section className=" w-full min-h-[80vh] h-fit mb-20 relative">
+      <div className="w-full  py-20 px-[70px] min-h-[80vh] bg-[#2020205b] h-fit">
         <article className="w-full flex justify-center mb-10 md:mb-20">
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">CONTACT</h2>
         </article>
 
         <div className="flex flex-col md2:flex-row w-full items-center md2:justify-center space-y-10 md2:space-y-0 md2:space-x-32 lg:space-x-64">
           {/* Form Starts*/}
-          <div className="  md:w-[400px] w-full">
+          <div className="max-w-[400px]">
             <form className="">
               <div className="mb-6">
                 <label htmlFor="name" className="block mb-2">
@@ -70,7 +70,7 @@ function Contact() {
           </div>
 
           <article className="flex">
-            <div className=" md:w-[400px] w-full">
+            <div className="w-[400px]">
               <article className="text-[2.2em] md2:text-[2.7em] lg:text-[3em] font-extrabold font-[GTWalsheimPro] ">
                 Get In Touch
               </article>

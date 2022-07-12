@@ -22,16 +22,16 @@ function Projects() {
               key={r.name}
               className="group bg-black w-full h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-md object-cover mx-auto"
             >
-              {/* <a href="#"> */}
-              <Image
-                className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
-                src={r.src}
-                alt=""
-                width={600}
-                height={1050}
-                objectFit="cover"
-              />
-              {/* </a> */}
+              <a href="#">
+                <Image
+                  className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
+                  src={r.src}
+                  alt=""
+                  width={700}
+                  height={700}
+                  objectFit="cover"
+                />
+              </a>
               {/* <div className="p-5">
                 <a href="#">
                   <h4 className="mb-2 text-2xl font-bold tracking-tight">
