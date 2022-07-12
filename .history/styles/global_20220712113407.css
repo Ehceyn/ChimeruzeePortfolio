@@ -62,8 +62,9 @@ h2 {
   align-items: center;
   width: fit-content;
   height: fit-content;
+  font-size: 3em;
   color: gray;
-  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
+  background: -webkit-linear-gradient(180deg, #0070fdff, #d50098ff, #fd2828);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-wrap: wrap;

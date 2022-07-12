@@ -17,13 +17,13 @@ export default function Home() {
         contentKeyword="web development, react development, frontend development, web design, programming"
         contentDescription="A Web designer and developer's portfolio"
       />
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <About />
-      {/* <Projects /> */}
-      {/* <Technologies />
+      <Projects />
+      <Technologies />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

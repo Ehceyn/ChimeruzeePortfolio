@@ -41,7 +41,7 @@ function Hero() {
         </h4>
         <button
           type="button"
-          className="text-white mt-5 focus:outline-none uppercase rounded-2xl w-[180px] py-4 text-center background"
+          className="text-white mt-5 focus:outline-none uppercase rounded-lg w-[180px] py-6 text-center background"
         >
           hire me
         </button>

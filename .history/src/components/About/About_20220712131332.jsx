@@ -30,11 +30,11 @@ function About() {
         </div>
         <div className="absolute bottom-0 right-0">
           <div className="w-full flex justify-end">
-            <CgMenuGridO fontSize="80px" className="text-[#46444456]" />
+            <CgMenuGridO fontSize="120px" className="text-[#46444456]" />
           </div>
           <div className="flex">
-            <CgMenuGridO fontSize="80px" className="text-[#46444456]" />
-            <CgMenuGridO fontSize="80px" className="text-[#46444456]" />
+            <CgMenuGridO fontSize="120px" className="text-[#46444456]" />
+            <CgMenuGridO fontSize="120px" className="text-[#46444456]" />
           </div>
         </div>
       </div>

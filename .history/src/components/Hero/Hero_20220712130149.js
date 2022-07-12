@@ -34,14 +34,14 @@ function Hero() {
         <h1 className="text-7xl md2:text-8xl lg:text-9xl">
           I&apos;m Chimeruzee.
         </h1>
-        <h4 className="flex items-center w-fit max-w-[800px] h-fit py-5 text-2xl md2:text-2xl">
+        <h3 className="flex items-center w-fit max-w-[800px] h-fit py-5 text-3xl md2:text-4xl">
           I&apos;m a creative Frontend developer. An innovative and good team
           player who loves going extra mile to deliver a project. I make things
           work.
-        </h4>
+        </h3>
         <button
           type="button"
-          className="text-white mt-5 focus:outline-none uppercase rounded-2xl w-[180px] py-4 text-center background"
+          className="text-white mt-5 focus:outline-none uppercase rounded-lg w-[180px] py-6 text-center background"
         >
           hire me
         </button>
