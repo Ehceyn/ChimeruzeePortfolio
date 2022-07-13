@@ -6,13 +6,13 @@ function Contact() {
   return (
     <section className=" w-full min-h-[80vh] h-fit mb-20 ">
       <div className="w-full  py-20 px-7 md2:px-[70px] min-h-[80vh] bg-[#2020205b] h-fit">
-        <article className="w-full flex justify-center mb-20">
+        <article className="w-full flex justify-center mb-10 md:mb-20">
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">CONTACT</h2>
         </article>
 
         <div className="flex flex-col-reverse md2:flex-row w-full items-center md2:justify-center md2:space-x-32 lg:space-x-64">
           {/* Form Starts*/}
-          <div className="  md:w-[400px] w-full mt-20 md2:mt-0">
+          <div className="  md:w-[400px] w-full mt-10 md2:mt-0">
             <form className="flex md2:block flex-col items-center">
               <div className="mb-6 w-full">
                 <label htmlFor="name" className="block mb-2">

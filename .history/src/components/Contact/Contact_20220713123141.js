@@ -12,7 +12,7 @@ function Contact() {
 
         <div className="flex flex-col-reverse md2:flex-row w-full items-center md2:justify-center md2:space-x-32 lg:space-x-64">
           {/* Form Starts*/}
-          <div className="  md:w-[400px] w-full mt-20 md2:mt-0">
+          <div className="  md:w-[400px] w-full mt-10 md2:mt-0">
             <form className="flex md2:block flex-col items-center">
               <div className="mb-6 w-full">
                 <label htmlFor="name" className="block mb-2">

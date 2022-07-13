@@ -9,7 +9,7 @@ function Projects() {
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">PROJECTS</h2>
         </article>
         {/* All project cards */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 px-7 md:px-20">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 px-5 md:px-20">
           {[
             { src: "/images/test1.jpg", name: "HTML" },
             { src: "/images/test2.jpg", name: "CSS" },
