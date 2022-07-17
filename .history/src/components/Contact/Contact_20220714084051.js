@@ -21,7 +21,7 @@ function Contact() {
                 <input
                   type="text"
                   id="name"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                 />
               </div>
@@ -32,7 +32,7 @@ function Contact() {
                 <input
                   type="email"
                   id="email"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                 />
               </div>
@@ -44,7 +44,7 @@ function Contact() {
                   type="tel"
                   maxLength="14"
                   id="number"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                 />
               </div>
 
@@ -54,7 +54,7 @@ function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  className=" border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className=" border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                   rows={4}
                 ></textarea>

@@ -21,7 +21,7 @@ function Contact() {
                 <input
                   type="text"
                   id="name"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#bbb] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                 />
               </div>
@@ -32,7 +32,7 @@ function Contact() {
                 <input
                   type="email"
                   id="email"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#bbb] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                 />
               </div>
@@ -44,7 +44,7 @@ function Contact() {
                   type="tel"
                   maxLength="14"
                   id="number"
-                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className="border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#bbb] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                 />
               </div>
 
@@ -54,7 +54,7 @@ function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  className=" border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#999] text-white focus:ring-[#A32B7B] focus:border-[#A32B7B]"
+                  className=" border focus:outline-none rounded-lg block w-full font-[Sintony-Regular] p-2.5 border-gray-600 bg-transparent placeholder-[#bbb] text-white focus:ring-[#0070fdff] focus:border-[#0070fdff]"
                   required
                   rows={4}
                 ></textarea>
@@ -74,7 +74,7 @@ function Contact() {
               <article className="text-[2.2em] md2:text-[2.7em] lg:text-[3em] font-extrabold font-[GTWalsheimPro] ">
                 Get In Touch
               </article>
-              <p className="text-[#999] text-2xl">
+              <p className="text-[#bbb] text-2xl">
                 Let&apos;s bring that dream to reality together. That&apos;s why
                 i&apos;m here.
               </p>
@@ -83,7 +83,7 @@ function Contact() {
                   <div className="background w-fit rounded-full p-3">
                     <MdLocationOn className="text-[#ccc] text-[16px]" />
                   </div>
-                  <p className="text-[#999] text-2xl">
+                  <p className="text-[#bbb] text-2xl">
                     Rumuokwurusi, Port Harcourt, Nigeria.
                   </p>
                 </article>
@@ -91,13 +91,13 @@ function Contact() {
                   <div className="background w-fit rounded-full p-3">
                     <MdEmail className="text-[#ccc] text-[16px]" />
                   </div>
-                  <p className="text-[#999] text-2xl">itzmeruz31@gmail.com</p>
+                  <p className="text-[#bbb] text-2xl">itzmeruz31@gmail.com</p>
                 </article>
                 <article className="flex items-center space-x-3">
                   <div className="background w-fit rounded-full p-3">
                     <MdLocalPhone className="text-[#ccc] text-[16px]" />
                   </div>
-                  <p className="text-[#999] text-2xl">+234 811 0743 559</p>
+                  <p className="text-[#bbb] text-2xl">+234 811 0743 559</p>
                 </article>
               </article>
             </div>

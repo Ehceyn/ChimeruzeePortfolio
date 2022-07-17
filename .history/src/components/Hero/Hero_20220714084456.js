@@ -17,9 +17,7 @@ function Hero() {
 
   /* Linear Gradient Border for hero image */
   const borderGradient = {
-    background: `linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
-) border-box, linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
-) padding-box`,
+    background: `linear-gradient(${degree}deg, #0070fdff, #d50098ff, #fd2828) border-box, linear-gradient(${degree}deg, #0070fdff, #d50098ff, #fd2828) padding-box`,
   };
 
   return (

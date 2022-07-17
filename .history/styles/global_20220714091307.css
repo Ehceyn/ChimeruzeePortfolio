@@ -63,7 +63,7 @@ h2 {
   width: fit-content;
   height: fit-content;
   color: gray;
-  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-wrap: wrap;
@@ -136,7 +136,7 @@ li {
 
 /* Linear Gradient background for hero image */
 .background {
-  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
 }
 /* Linear Gradient Border for hero image */
 .border-gradient {

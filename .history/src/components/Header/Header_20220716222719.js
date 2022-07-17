@@ -1,13 +1,12 @@
 import React from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { MdMenu } from "react-icons/md";
 import { FaFileAlt } from "react-icons/fa";
 
 import Image from "next/image";
 
 function Header() {
   return (
-    <header className="flex items-center justify-center w-full h-[60px] md2:h-[80px] px-7 md2:px-[70px] fixed bg-[#000000a2] backdrop-blur-md shadow-sm top-0 inset-x-0 z-30">
+    <header className="flex items-center justify-center w-full h-[69px] md2:h-[80px] px-7 md2:px-[70px] fixed bg-[#000000a2] backdrop-blur-md shadow-sm top-0 inset-x-0 z-30">
       <div className="flex items-center justify-between w-[inherit] h-[inherit]">
         <Image
           src="/images/immersewhite.png"
@@ -30,7 +29,7 @@ function Header() {
             Contact
           </article>
         </nav>
-        <div className="hidden md:flex items-center w-fit h-[inherit] space-x-4">
+        <div className="flex items-center w-fit h-[inherit] space-x-4">
           <a
             title="github"
             target="_blank"
@@ -70,11 +69,6 @@ function Header() {
             {" "}
             <FaFileAlt className="text-[#ccc] text-[16px]" />
           </a>
-        </div>
-
-        {/* HAMBUGER MENU */}
-        <div className="md:hidden flex items-center w-fit h-[inherit] ">
-          <MdMenu className="text-[#fff] text-[26px]" />
         </div>
       </div>
     </header>

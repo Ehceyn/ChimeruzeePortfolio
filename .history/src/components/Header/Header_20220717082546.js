@@ -1,6 +1,5 @@
 import React from "react";
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { MdMenu } from "react-icons/md";
+import { BsGithub, BsLinkedin, BsTwitter, BsMenu } from "react-icons/bs";
 import { FaFileAlt } from "react-icons/fa";
 
 import Image from "next/image";
@@ -74,7 +73,7 @@ function Header() {
 
         {/* HAMBUGER MENU */}
         <div className="md:hidden flex items-center w-fit h-[inherit] ">
-          <MdMenu className="text-[#fff] text-[26px]" />
+          <BsMenu />
         </div>
       </div>
     </header>

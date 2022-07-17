@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <MetaHead
-        title="Meruzee | Portfolio"
+        title="Chimeruzee | Front-end developer"
         contentKeyword="web development, react development, frontend development, web design, programming"
         contentDescription="A Web designer and developer's portfolio"
       />

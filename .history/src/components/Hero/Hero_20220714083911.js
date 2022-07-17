@@ -17,9 +17,7 @@ function Hero() {
 
   /* Linear Gradient Border for hero image */
   const borderGradient = {
-    background: `linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
-) border-box, linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
-) padding-box`,
+    background: `linear-gradient(${degree}deg, #0070fdff, #d50098ff, #fd2828) border-box, linear-gradient(${degree}deg, #0070fdff, #d50098ff, #fd2828) padding-box`,
   };
 
   return (
@@ -36,7 +34,7 @@ function Hero() {
         <h1 className="text-7xl md2:text-8xl lg:text-9xl">
           I&apos;m Chimeruzee.
         </h1>
-        <h4 className="flex items-center w-fit  font-bold max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
+        <h4 className="flex items-center w-fit max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
           I&apos;m a creative Frontend developer. An innovative and good team
           player who loves going extra mile to deliver a project. I make things
           work.

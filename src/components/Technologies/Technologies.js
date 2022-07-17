@@ -25,7 +25,7 @@ function Technologies() {
           ].map((r, index) => (
             <div
               key={r.name}
-              className="group flex flex-col justify-center items-center bg-[#2020205b] py-7 px-12 rounded-lg shadow-md mx-auto"
+              className="group flex flex-col justify-center items-center shadow-xl shadow-black bg-[#2020205b] py-7 px-12 rounded-lg mx-auto"
             >
               <Image
                 src={r.src || "/images/GraphQL-logo.png"}

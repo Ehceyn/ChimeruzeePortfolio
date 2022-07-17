@@ -1,4 +1,5 @@
 import MetaHead from "../src/components/MetaHead/MetaHead";
+import Header from "../src/components/Header/Header";
 import Hero from "../src/components/Hero/Hero";
 import Projects from "../src/components/Projects/Projects";
 import Technologies from "../src/components/Technologies/Technologies";
@@ -12,15 +13,17 @@ export default function Home() {
   return (
     <>
       <MetaHead
-        title="Meruzee | Portfolio"
+        title="Chimeruzee | Front-end developer"
         contentKeyword="web development, react development, frontend development, web design, programming"
         contentDescription="A Web designer and developer's portfolio"
       />
+      <Header />
       <Hero />
       <About />
       <Projects />
       <Technologies />
       <Contact />
+      <Footer />
     </>
   );
 }

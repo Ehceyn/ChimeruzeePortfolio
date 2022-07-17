@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="px-7 md2:px-[70px]">
+      <div className="px-[70px]">
         <hr className="border-[#2020205b]" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 w-full mb-7 px-7 md2:px-[70px] py-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 w-full mb-7 px-[70px] py-10 ">
         <article className="flex items-center h-fit mt-5 justify-start">
           <Image
             src="/images/immersewhite.png"

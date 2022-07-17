@@ -74,7 +74,7 @@ function Header() {
 
         {/* HAMBUGER MENU */}
         <div className="md:hidden flex items-center w-fit h-[inherit] ">
-          <MdMenu className="text-[#fff] text-[26px]" />
+          <MdMenu />
         </div>
       </div>
     </header>

@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { MdMenu } from "react-icons/md";
 import { FaFileAlt } from "react-icons/fa";
 
 import Image from "next/image";
@@ -30,7 +29,7 @@ function Header() {
             Contact
           </article>
         </nav>
-        <div className="hidden md:flex items-center w-fit h-[inherit] space-x-4">
+        <div className="flex items-center w-fit h-[inherit] space-x-4">
           <a
             title="github"
             target="_blank"
@@ -70,11 +69,6 @@ function Header() {
             {" "}
             <FaFileAlt className="text-[#ccc] text-[16px]" />
           </a>
-        </div>
-
-        {/* HAMBUGER MENU */}
-        <div className="md:hidden flex items-center w-fit h-[inherit] ">
-          <MdMenu className="text-[#fff] text-[26px]" />
         </div>
       </div>
     </header>

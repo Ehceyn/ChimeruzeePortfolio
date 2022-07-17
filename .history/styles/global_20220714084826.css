@@ -52,7 +52,7 @@ h1 {
   width: 100%;
   height: fit-content;
   color: gray;
-  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-wrap: wrap;
@@ -63,7 +63,7 @@ h2 {
   width: fit-content;
   height: fit-content;
   color: gray;
-  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  background: -webkit-linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-wrap: wrap;
@@ -71,7 +71,7 @@ h2 {
 h3 {
   font-family: Sintony-Bold, "Segoe UI", sans-serif;
   line-height: 1.2;
-  color: #999;
+  color: #bbb;
 }
 
 h4 {
@@ -83,7 +83,7 @@ h4 {
 p,
 a {
   font-size: 0.8em;
-  color: #999;
+  color: #bbb;
   line-height: 1.5;
 }
 
@@ -136,7 +136,12 @@ li {
 
 /* Linear Gradient background for hero image */
 .background {
-  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  background: -webkit-linear-gradient(
+    210deg,
+    rgba(0, 114, 253, 0.582),
+    rgba(213, 0, 153, 0.568),
+    rgba(253, 40, 40, 0.562)
+  );
 }
 /* Linear Gradient Border for hero image */
 .border-gradient {
@@ -204,7 +209,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #999;
+  background: #bbb;
 }
 
 /* Style the other scrollbar  with className  */

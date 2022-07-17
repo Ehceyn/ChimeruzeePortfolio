@@ -10,7 +10,7 @@ function About() {
             <h2 className="text-5xl md2:text-6xl lg:text-8xl">ABOUT ME</h2>
           </article>
           <div className="w-full flex flex-col items-center space-y-5 px-7 md2:px-0">
-            <p className="text-[#999] text-2xl max-w-[400px] text-center ">
+            <p className="text-[#bbb] text-2xl max-w-[400px] text-center ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam nemo eveniet autem libero praesentium sit assumenda est
               deleniti exercitationem dolorem accusamus voluptates maxime
@@ -19,14 +19,14 @@ function About() {
               maxime blanditiis dolores voluptas voluptatem, veritatis tempore
               repudiandae.
             </p>
-            <p className="text-[#999] text-2xl max-w-[400px] text-center">
+            <p className="text-[#bbb] text-2xl max-w-[400px] text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam nemo eveniet autem libero praesentium sit assumenda est
               deleniti exercitationem dolorem accusamus voluptates maxime
               blanditiis dolores voluptas voluptatem, veritatis tempore
               repudiandae.
             </p>
-            <p className="text-[#999] text-2xl max-w-[400px] text-center">
+            <p className="text-[#bbb] text-2xl max-w-[400px] text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam nemo eveniet autem libero praesentium sit assumenda est
               deleniti exercitationem dolorem accusamus voluptates maxime
