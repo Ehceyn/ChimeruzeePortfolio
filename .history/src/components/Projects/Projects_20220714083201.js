@@ -20,11 +20,11 @@ function Projects() {
           ].map((r) => (
             <div
               key={r.name}
-              className="group flex items-center justify-center max-w-[540px] bg-black w-full xs:h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-lg shadow-black object-cover mx-auto"
+              className="group bg-black w-full h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-lg shadow-black object-cover mx-auto"
             >
               {/* <a href="#"> */}
               <Image
-                className="rounded-2xl group-hover:scale-105 transition-all duration-200"
+                className="rounded-t-2xl group-hover:scale-105 transition-all duration-200"
                 src={r.src}
                 alt=""
                 width={600}

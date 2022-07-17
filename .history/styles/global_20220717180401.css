@@ -99,15 +99,13 @@ h5,
 h6,
 button {
   font-family: GTWalsheimPro, "Segoe UI", sans-serif;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 button:focus {
   outline: none;
-}
-
-button:active {
-  outline: none;
-  transition: all 0.1s ease-in-out;
 }
 
 .buttonGrad {
@@ -118,13 +116,8 @@ button:active {
     #e94057 51%,
     #8a2387 100%
   );
-  outline: none;
-
   background-size: 200% auto;
-}
-
-.buttonGrad:active {
-  box-shadow: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .buttonGrad:hover {

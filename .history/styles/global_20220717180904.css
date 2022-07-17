@@ -105,11 +105,6 @@ button:focus {
   outline: none;
 }
 
-button:active {
-  outline: none;
-  transition: all 0.1s ease-in-out;
-}
-
 .buttonGrad {
   box-shadow: 0 2px 6px 0 rgb(126 52 161 / 39%);
   background-image: linear-gradient(
@@ -118,13 +113,8 @@ button:active {
     #e94057 51%,
     #8a2387 100%
   );
-  outline: none;
-
   background-size: 200% auto;
-}
-
-.buttonGrad:active {
-  box-shadow: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .buttonGrad:hover {

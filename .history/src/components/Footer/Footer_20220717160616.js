@@ -7,20 +7,8 @@ export default function Footer() {
       <div className="px-7 md2:px-[70px]">
         <hr className="border border-[#2020205b]" />
       </div>
-      <article className="flex md:hidden items-center h-fit mt-5 justify-start px-7 pt-10">
-        <Image
-          src="/images/immersewhite.png"
-          height="40px"
-          width="40px"
-          alt="Logo"
-          objectFit="contain"
-        />
-        <h4 className="text-4xl font-bold tracking-tight capitalize ml-5">
-          Meruzee
-        </h4>
-      </article>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-5 w-full mb-7 px-7 md2:px-[70px] py-10 ">
-        <article className="hidden md:flex items-center h-fit mt-5 justify-start">
+        {/* <article className="flex items-center h-fit mt-5 justify-start">
           <Image
             src="/images/immersewhite.png"
             height="40px"
@@ -31,7 +19,7 @@ export default function Footer() {
           <h4 className="text-4xl font-bold tracking-tight capitalize ml-10">
             Meruzee
           </h4>
-        </article>
+        </article> */}
         <article className="space-y-7 transition-[border] duration-300 ">
           <h4 className="mt-5  text-2xl font-bold tracking-tight capitalize">
             Site

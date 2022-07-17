@@ -99,32 +99,48 @@ h5,
 h6,
 button {
   font-family: GTWalsheimPro, "Segoe UI", sans-serif;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 button:focus {
   outline: none;
 }
 
-button:active {
-  outline: none;
-  transition: all 0.1s ease-in-out;
-}
-
 .buttonGrad {
   box-shadow: 0 2px 6px 0 rgb(126 52 161 / 39%);
-  background-image: linear-gradient(
-    to right,
-    #8a2387 0%,
-    #e94057 51%,
-    #8a2387 100%
-  );
-  outline: none;
-
-  background-size: 200% auto;
+  background-image: linear-gradient(to left, #e94057, #8a2387, #8a2387);
+  background-size: 100% auto;
+  transition: all 0.4s ease-in-out;
 }
 
-.buttonGrad:active {
-  box-shadow: none;
+/* .buttonGrad:hover {
+  background: linear-gradient(210deg, #e94057, #8a2387);
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+} */
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
 }
 
 .buttonGrad:hover {

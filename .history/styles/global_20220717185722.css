@@ -107,7 +107,6 @@ button:focus {
 
 button:active {
   outline: none;
-  transition: all 0.1s ease-in-out;
 }
 
 .buttonGrad {
@@ -118,8 +117,6 @@ button:active {
     #e94057 51%,
     #8a2387 100%
   );
-  outline: none;
-
   background-size: 200% auto;
 }
 

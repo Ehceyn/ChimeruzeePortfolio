@@ -118,8 +118,6 @@ button:active {
     #e94057 51%,
     #8a2387 100%
   );
-  outline: none;
-
   background-size: 200% auto;
 }
 

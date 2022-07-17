@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { fromBottom, heroImage, scaleUp } from "../../../animations/animation";
+import { heroImage } from "../../../animations/animation";
 
 function Hero() {
   const [degree, setDegree] = useState(210);
@@ -23,12 +23,7 @@ function Hero() {
   };
 
   return (
-    <motion.section
-      initial="initial"
-      animate="animate"
-      transition="transition"
-      className="flex flex-col-reverse md2:flex-row md2:justify-between justify-center items-center w-full min-h-[100vh]  pt-[80px] pb-20 px-5 md:px-[40px] lg:px-[70px] "
-    >
+    <section className="flex flex-col-reverse md2:flex-row md2:justify-between justify-center items-center w-full min-h-[100vh]  pt-[80px] pb-20 px-5 md:px-[40px] lg:px-[70px] ">
       {/* <video
         src="/video/vid.mp4"
         className="absolute t-0 inset-x-0 "
@@ -36,12 +31,7 @@ function Hero() {
         loop
         muted
       ></video> */}
-      <motion.div
-        initial="hidden"
-        animate="animate"
-        variants={fromBottom}
-        className="w-fit text-center md2:text-left leading-loose md2:mr-[100px] mt-[40px] md2:mt-0"
-      >
+      <div className="w-fit text-center md2:text-left leading-loose md2:mr-[100px] mt-[40px] md2:mt-0">
         <h1 className="text-7xl md2:text-8xl lg:text-9xl">Howdy! </h1>
         <h1 className="text-7xl md2:text-8xl lg:text-9xl">
           I&apos;m Chimeruzee.
@@ -57,13 +47,15 @@ function Hero() {
         >
           hire me
         </button>
-      </motion.div>
+      </div>
 
       <div className="max-w-[250px] min-w-[250px] md2:max-w-[350px] md2:min-w-[350px] lg:max-w-[400px] lg:min-w-[400px] object-contain ">
         <motion.div
+          initial="initial"
+          animate="animate"
+          transition="transition"
           className="border-[7px] md2:border-[10px] border-white rounded-full object-cover flex justify-center items-center p-[7px] md2:p-[10px] "
           style={borderGradient}
-          variants={scaleUp}
         >
           <Image
             src="/images/meruz-bw.jpg"
@@ -75,7 +67,7 @@ function Hero() {
           />
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

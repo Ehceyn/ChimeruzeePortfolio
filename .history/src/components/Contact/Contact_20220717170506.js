@@ -64,7 +64,7 @@ function Contact() {
                 type="submit"
                 className="text-white buttonGrad mt-5 focus:outline-none uppercase rounded-2xl w-[180px] py-4 text-center"
               >
-                send
+                Send
               </button>
             </form>
           </div>

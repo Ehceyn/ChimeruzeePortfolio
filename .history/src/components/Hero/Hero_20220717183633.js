@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { fromBottom, heroImage, scaleUp } from "../../../animations/animation";
+import { fromBottom, heroImage } from "../../../animations/animation";
 
 function Hero() {
   const [degree, setDegree] = useState(210);
@@ -63,7 +63,6 @@ function Hero() {
         <motion.div
           className="border-[7px] md2:border-[10px] border-white rounded-full object-cover flex justify-center items-center p-[7px] md2:p-[10px] "
           style={borderGradient}
-          variants={scaleUp}
         >
           <Image
             src="/images/meruz-bw.jpg"

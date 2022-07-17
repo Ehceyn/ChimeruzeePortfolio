@@ -20,7 +20,7 @@ function Projects() {
           ].map((r) => (
             <div
               key={r.name}
-              className="group flex items-center justify-center max-w-[540px] bg-black w-full xs:h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-lg shadow-black object-cover mx-auto"
+              className="group flex items-center justify-center max-w-[640px] bg-black w-full xs:h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-900 shadow-lg shadow-black object-cover mx-auto"
             >
               {/* <a href="#"> */}
               <Image

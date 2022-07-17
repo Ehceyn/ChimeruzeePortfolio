@@ -99,38 +99,11 @@ h5,
 h6,
 button {
   font-family: GTWalsheimPro, "Segoe UI", sans-serif;
-  transition: all 0.4s ease-in-out;
-}
-button:focus {
-  outline: none;
-}
-
-button:active {
-  outline: none;
-  transition: all 0.1s ease-in-out;
 }
 
 .buttonGrad {
   box-shadow: 0 2px 6px 0 rgb(126 52 161 / 39%);
-  background-image: linear-gradient(
-    to right,
-    #8a2387 0%,
-    #e94057 51%,
-    #8a2387 100%
-  );
-  outline: none;
-
-  background-size: 200% auto;
-}
-
-.buttonGrad:active {
-  box-shadow: none;
-}
-
-.buttonGrad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
 }
 
 .card-text {

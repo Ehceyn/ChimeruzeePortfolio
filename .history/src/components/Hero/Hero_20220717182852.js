@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { fromBottom, heroImage, scaleUp } from "../../../animations/animation";
+import { fromBottom, heroImage } from "../../../animations/animation";
 
 function Hero() {
   const [degree, setDegree] = useState(210);
@@ -36,16 +36,19 @@ function Hero() {
         loop
         muted
       ></video> */}
-      <motion.div
-        initial="hidden"
-        animate="animate"
-        variants={fromBottom}
-        className="w-fit text-center md2:text-left leading-loose md2:mr-[100px] mt-[40px] md2:mt-0"
-      >
-        <h1 className="text-7xl md2:text-8xl lg:text-9xl">Howdy! </h1>
-        <h1 className="text-7xl md2:text-8xl lg:text-9xl">
+      <div className="w-fit text-center md2:text-left leading-loose md2:mr-[100px] mt-[40px] md2:mt-0">
+        <motion.h1
+          variants={fromBottom}
+          className="text-7xl md2:text-8xl lg:text-9xl"
+        >
+          Howdy!{" "}
+        </motion.h1>
+        <motion.h1
+          variants={fromBottom}
+          className="text-7xl md2:text-8xl lg:text-9xl"
+        >
           I&apos;m Chimeruzee.
-        </h1>
+        </motion.h1>
         <h4 className="flex items-center w-fit  font-bold max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
           I&apos;m a creative Frontend developer. An innovative and good team
           player who loves going extra mile to deliver a project. I make things
@@ -57,13 +60,12 @@ function Hero() {
         >
           hire me
         </button>
-      </motion.div>
+      </div>
 
       <div className="max-w-[250px] min-w-[250px] md2:max-w-[350px] md2:min-w-[350px] lg:max-w-[400px] lg:min-w-[400px] object-contain ">
         <motion.div
           className="border-[7px] md2:border-[10px] border-white rounded-full object-cover flex justify-center items-center p-[7px] md2:p-[10px] "
           style={borderGradient}
-          variants={scaleUp}
         >
           <Image
             src="/images/meruz-bw.jpg"
