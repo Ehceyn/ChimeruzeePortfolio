@@ -1,0 +1,343 @@
+@font-face {
+  font-family: GTWalsheimPro;
+  src: url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf); /* IE9 Compat Modes */
+  src: url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf?iefix)
+      format("embedded-opentype") /* IE6-IE8 */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.woff)
+      format("woff") /* Super Modern Browsers */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.woff2)
+      format("woff2") /* Pretty Modern Browsers */,
+    url(/fonts/GTWalsheimPro-CondensedBlack/GTWalsheimPro-CondensedBlack.ttf)
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sintony-Bold;
+  src: url(/fonts/Sintony/Sintony-Bold.ttf); /* IE9 Compat Modes */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sintony-Regular;
+  src: url(/fonts/Sintony/Sintony-Regular.ttf); /* IE9 Compat Modes */
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+*:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: black;
+}
+body {
+  font-family: Sintony-Regular, "Segoe UI", sans-serif;
+  font-size: 1.6rem;
+  background: black;
+  color: #ccc;
+  cursor: default;
+  max-width: 1700px;
+  margin: auto;
+}
+h1 {
+  width: 100%;
+  height: fit-content;
+  color: gray;
+  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-wrap: wrap;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  color: gray;
+  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-wrap: wrap;
+}
+h3 {
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  line-height: 1.2;
+  color: #999;
+}
+
+h4 {
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  line-height: 1.2;
+  color: #ccc;
+}
+
+p,
+a {
+  font-size: 0.8em;
+  color: #999;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h5,
+h6,
+button {
+  font-family: GTWalsheimPro, "Segoe UI", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.buttonGrad {
+  box-shadow: 0 2px 6px 0 rgb(126 52 161 / 39%);
+  background-image: linear-gradient(
+    to right,
+    #8a2387 0%,
+    #e94057 51%,
+    #8a2387 100%
+  );
+  outline: none;
+
+  background-size: 200% auto;
+}
+
+.buttonGrad:active {
+  box-shadow: none;
+}
+
+.buttonGrad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+nav .navlinks {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: inherit;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Sintony-Bold, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+nav .navlinks:focus {
+  color: #0070fdff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+li {
+  list-style: none;
+}
+
+.sectionStyle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 30px 100px;
+}
+
+/* Linear Gradient background for hero image */
+.background {
+  background: -webkit-linear-gradient(210deg, #f27121, #e94057, #8a2387);
+}
+/* Linear Gradient Border for hero image */
+.border-gradient {
+  background: linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828) border-box,
+    linear-gradient(210deg, #0070fdff, #d50098ff, #fd2828) padding-box;
+}
+
+.hero {
+  /* position: relative; */
+  z-index: 10;
+  background-color: rgba(179, 174, 174, 0.562);
+}
+
+/* .hero::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.95;
+  background: url("/images/meruz-bw.jpg") no-repeat center/cover;
+} */
+.contact {
+  position: absolute;
+  z-index: 3;
+}
+.contact2 {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  right: -100px;
+  background: -webkit-linear-gradient(
+    210deg,
+    rgba(0, 114, 253, 0.212),
+    rgba(213, 0, 153, 0.26),
+    #fd282833
+  );
+}
+
+/* 
+   accent1: "hsl(34.9,98.6%,72.9%)",
+    button: "hsl(205.1,100%,36.1%)",
+    background2: "hsl(232.7,27.3%,23.7%)", */
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px;
+  @apply bg-[#222];
+  border-radius: none;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 10px;
+}
+
+* {
+  scrollbar-width: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Style the other scrollbar  with className  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px;
+  @apply bg-transparent;
+  border-radius: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(85, 85, 85, 0.158);
+  border-radius: 10px;
+}
+
+* {
+  scrollbar-width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.158);
+}
+
+/* Hamburger menu styles */
+.nav-hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.nav-button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
