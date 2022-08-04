@@ -109,7 +109,7 @@ function Projects() {
               </div>
               {/* </a> */}
               <div
-                className={`p-5 bg-[#0B0B0B]  ${
+                className={`p-5 bg-[#fff]  ${
                   isMobile ? "block" : "hidden"
                 } md:hidden space-y-6`}
               >
