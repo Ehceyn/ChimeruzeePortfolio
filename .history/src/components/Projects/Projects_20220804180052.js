@@ -4,8 +4,6 @@ import ReactSvg from "../SVGS/ReactSvg";
 import NextSvg from "../SVGS/NextSvg";
 import FirebaseSvg from "../SVGS/FirebaseSvg";
 import MongoSvg from "../SVGS/MongoSvg";
-import NodeSvg from "../SVGS/NodeSvg";
-import GraphQlSvg from "../SVGS/GraphQlSvg";
 
 function Projects() {
   // Check if it's a mobile device
@@ -143,10 +141,10 @@ function Projects() {
                       <MongoSvg />
                     </a>
                     <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <NodeSvg />
+                      <NextSvg />
                     </a>
                     <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <GraphQlSvg />
+                      <NextSvg />
                     </a>
                   </div>
                 </a>

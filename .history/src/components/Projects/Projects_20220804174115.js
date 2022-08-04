@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import ReactSvg from "../SVGS/ReactSvg";
-import NextSvg from "../SVGS/NextSvg";
-import FirebaseSvg from "../SVGS/FirebaseSvg";
-import MongoSvg from "../SVGS/MongoSvg";
-import NodeSvg from "../SVGS/NodeSvg";
-import GraphQlSvg from "../SVGS/GraphQlSvg";
 
 function Projects() {
   // Check if it's a mobile device
@@ -129,24 +123,21 @@ function Projects() {
                   <h4 className="text-2xl font-bold tracking-tight capitalize">
                     Stacks
                   </h4>
-                  <div className="grid grid-cols-6 gap-x-5 gap-y-3">
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit">
-                      <ReactSvg />
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-3">
+                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#fff] rounded-md capitalize">
+                      <Image
+                        className={` md:rounded-2xl ${
+                          isMobile ? "rounded-t-2xl" : "rounded-2xl"
+                        } transition-all duration-200`}
+                        src="/public/images/react-small.svg"
+                        alt=""
+                        width={20}
+                        height={20}
+                        objectFit="cover"
+                      />
                     </a>
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <NextSvg />
-                    </a>
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <FirebaseSvg />
-                    </a>
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <MongoSvg />
-                    </a>
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <NodeSvg />
-                    </a>
-                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit ">
-                      <GraphQlSvg />
+                    <a className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md capitalize">
+                      React
                     </a>
                   </div>
                 </a>
