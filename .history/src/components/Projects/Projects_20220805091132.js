@@ -9,6 +9,7 @@ function Projects() {
   console.log(work, "work");
   console.log(loading, "loading");
   console.log(error, "error");
+  console.log(getWork, "getWork");
   // Check if it's a mobile device
   const [isMobile, setIsMobile] = useState(false);
 

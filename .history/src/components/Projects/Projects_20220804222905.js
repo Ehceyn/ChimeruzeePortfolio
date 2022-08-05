@@ -1,14 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import SVGS from "../SVGS/SVGS";
-import { WorksContext } from "../../State/Providers/WorksProvider";
 
 function Projects() {
-  const { works, work, loading, error, getWork } = useContext(WorksContext);
-  console.log(works, "works");
-  console.log(work, "work");
-  console.log(loading, "loading");
-  console.log(error, "error");
   // Check if it's a mobile device
   const [isMobile, setIsMobile] = useState(false);
 
@@ -37,11 +31,11 @@ function Projects() {
           {/* All project cards */}
           {[
             { src: "/images/test1.jpg", name: "HTML" },
-            { src: "/images/test2.jpg", name: "CSSr" },
-            { src: "/images/test1.jpg", name: "HTMdL" },
-            { src: "/images/test2.jpg", name: "CSjS" },
-            { src: "/images/test1.jpg", name: "HTtML" },
-            { src: "/images/test2.jpg", name: "CShS" },
+            { src: "/images/test2.jpg", name: "CSS" },
+            { src: "/images/test1.jpg", name: "HTML" },
+            { src: "/images/test2.jpg", name: "CSS" },
+            { src: "/images/test1.jpg", name: "HTML" },
+            { src: "/images/test2.jpg", name: "CSS" },
           ].map((r) => (
             <div
               key={r.name}
