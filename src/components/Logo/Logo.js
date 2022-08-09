@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Logo = () => {
+const Logo = ({ bgColor, size }) => {
   const container = {
     show: {
       transition: {
@@ -12,26 +12,28 @@ const Logo = () => {
   const icon = {
     hidden: {
       pathLength: 0,
-      fill: "rgba(0, 0, 0, 0)",
+      // fill: "rgba(0, 0, 0, 0)",
     },
     visible: {
       pathLength: 0,
-      fill: "rgba(0, 0, 0, 1)",
+      // fill: "rgba(0, 0, 0, 1)",
     },
   };
 
   return (
-    <div className="bg-white p-[1px] rounded-full">
+    <div className={`${bgColor} w-fit p-[1px] rounded-full`}>
       <motion.svg
         // variants={container}
         // animate="show"
         version="1.0"
-        width="771.000000pt"
-        height="774.000000pt"
+        width="100px"
+        height="100px"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 771.000000 774.000000"
         preserveAspectRatio="xMidYMid meet"
-        className="w-[40px] md:w-[50px] h-[40px] md:h-[50px] "
+        className={`w-[${size}px] md:w-[${size + 10}px] h-[${size}px] md:h-[${
+          size + 10
+        }px] `}
       >
         <g
           transform="translate(0.000000,774.000000) scale(0.100000,-0.100000)"
