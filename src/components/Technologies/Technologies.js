@@ -46,18 +46,18 @@ function Technologies() {
           className="w-full grid grid-cols-2 sm:grid-cols-3 md2:grid-cols-4 gap-x-4 gap-y-10 px-5"
         >
           {[
-            { src: "/images/html.png", name: "HTML" },
-            { src: "/images/css.png", name: "CSS" },
-            { src: "/images/js.png", name: "JavaScript" },
-            { src: "/images/react.png", name: "react" },
-            { src: "/images/nodejs.png", name: "nodeJS" },
+            { src: "/images/html-5.svg", name: "HTML" },
+            { src: "/images/css-3.svg", name: "CSS" },
+            { src: "/images/javascript.svg", name: "JavaScript" },
+            { src: "/images/react.svg", name: "react" },
+            { src: "/images/nodejs-icon.svg", name: "nodeJS" },
             { src: "/images/nextjs.svg", name: "nextJS" },
-            { src: "/images/GraphQL-logo.png", name: "graphQL" },
-            { src: "/images/redux.png", name: "Redux" },
-            { src: "/images/mongodb.png", name: "MongoDB" },
-            { src: "/images/firebase.png", name: "Firebase" },
-            { src: "/images/git.png", name: "Git" },
-            { src: "/images/tailwind.png", name: "Tailwind" },
+            { src: "/images/graphql.svg", name: "graphQL" },
+            { src: "/images/redux.svg", name: "Redux" },
+            { src: "/images/mongodb-icon.svg", name: "MongoDB" },
+            { src: "/images/firebase.svg", name: "Firebase" },
+            { src: "/images/git-icon.svg", name: "Git" },
+            { src: "/images/tailwindcss-icon.svg", name: "Tailwind" },
           ].map((r, index) => (
             <div
               key={r.name}
@@ -65,7 +65,7 @@ function Technologies() {
               className="group flex flex-col justify-center items-center shadow-xl shadow-black bg-[#2020205b] py-7 px-12 rounded-lg mx-auto"
             >
               <Image
-                src={r.src || "/images/GraphQL-logo.png"}
+                src={r.src || "/images/graphql.svg"}
                 alt=""
                 width={70}
                 height={70}

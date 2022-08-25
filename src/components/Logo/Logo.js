@@ -26,8 +26,8 @@ const Logo = ({ bgColor, size }) => {
         // variants={container}
         // animate="show"
         version="1.0"
-        width="100px"
-        height="100px"
+        width="50px"
+        height="50px"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 771.000000 774.000000"
         preserveAspectRatio="xMidYMid meet"
