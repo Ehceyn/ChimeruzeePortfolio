@@ -38,7 +38,7 @@ function Header() {
     <header className="flex items-center justify-center w-full h-[60px] md2:h-[80px] px-7 md2:px-[70px] fixed bg-[#000000a2] backdrop-blur-md shadow-sm top-0 inset-x-0 z-30">
       <div className="flex items-center justify-between w-[inherit] h-[inherit]">
         <Logo bgColor="bg-white" size={40} />
-        <nav className="md:flex items-center w-fit h-fit space-x-4 hidden ">
+        {/* <nav className="md:flex items-center w-fit h-fit space-x-4 hidden ">
           <article className="navlinks hover:bg-[#2020205b] p-4 hover:rounded-lg hover:scale-105 active:scale-100 transition-all duration-200">
             Home
           </article>
@@ -51,7 +51,7 @@ function Header() {
           <article className="navlinks hover:bg-[#2020205b] p-4 hover:rounded-lg hover:scale-105 active:scale-100 transition-all duration-200">
             Contact
           </article>
-        </nav>
+        </nav> */}
         <div className="hidden md:flex items-center w-fit h-[inherit] space-x-4">
           <a
             title="github"
@@ -104,7 +104,7 @@ function Header() {
         >
           <motion.div className="nav-background" variants={sidebar} />
           <Navigation />
-          <MenuToggle toggle={() => toggleOpen()} />
+          {/* <MenuToggle toggle={() => toggleOpen()} /> */}
         </motion.nav>
       </div>
     </header>

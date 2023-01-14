@@ -15,9 +15,9 @@ const WorksProvider = ({ children }) => {
     message: "",
     status: false,
   });
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   //   Fetch data from firebase v9
   const fetchData = async () => {

@@ -3,30 +3,17 @@ import Image from "next/image";
 import SVGS from "../SVGS/SVGS";
 import { WorksContext } from "../../State/Providers/WorksProvider";
 import Logo from "../Logo/Logo";
-
+import { data as works } from "../../data";
+import { motion } from "framer-motion";
+import Project from "./Project";
+import { data } from "autoprefixer";
 function Projects() {
-  const { works, work, loading, error, getWork } = useContext(WorksContext);
-  console.log(works, "works");
-  console.log(work, "work");
-  console.log(loading, "loading");
-  console.log(error, "error");
+  // const { works, work, loading, error, getWork } = useContext(WorksContext);
+  // console.log(works, "works");
+  // console.log(work, "work");
+  // console.log(loading, "loading");
+  // console.log(error, "error");
   // Check if it's a mobile device
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const isMobile = () => {
-      if (
-        navigator.userAgent.match(
-          /(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|iemobile)/
-        )
-      ) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-    setIsMobile(isMobile());
-  }, []);
 
   return (
     <section className="md2:px-[70px] mt-20">
@@ -34,113 +21,21 @@ function Projects() {
         <article className="w-full flex justify-center mb-20">
           <h2 className="text-5xl md2:text-6xl lg:text-8xl">PROJECTS</h2>
         </article>
-        {loading && (
+        {/* {loading && (
           <div className="w-full h-80 flex items-center justify-center">
             <Logo bgColor="background" size={80} />
           </div>
-        )}
+        )} */}
 
         <div className=" grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 px-7 md:px-20">
           {/* All project cards */}
           {works?.map((work, i) => (
-            <div
-              key={work.name}
-              className={`relative ${
-                !isMobile && "flex"
-              } items-center justify-center md:max-w-[540px] bg-black w-full md:h-[450px] overflow-hidden rounded-2xl border-[1px] border-gray-800 shadow-md shadow-[#030303] object-cover mx-auto`}
-            >
-              {/* <a href="#"> */}
-              <Image
-                className={` md:rounded-2xl ${
-                  isMobile ? "rounded-t-2xl" : "rounded-2xl"
-                } transition-all duration-200`}
-                src={work.imgURL}
-                alt=""
-                width={isMobile ? 400 : 600}
-                height={isMobile ? 350 : 1050}
-                objectFit="cover"
-              />
-              <div
-                className={`${
-                  isMobile ? "hidden" : "flex"
-                } md:flex items-center justify-center max-w-[540px] background opacity-0 hover:opacity-100 w-full xs:h-[450px] overflow-hidden rounded-2xl absolute transition-all duration-500`}
-              >
-                <div className="flex items-center justify-center max-w-[540px] rounded-tr-[100px]  bg-[#0B0B0B]  w-full xs:h-[450px] overflow-hidden">
-                  <div className="space-y-8 text-center ">
-                    <h4 className="text-2xl font-bold tracking-tight capitalize">
-                      {work.name}
-                    </h4>
-
-                    <p className="mb-3 w-[300px] h-30 card-text">
-                      {work.description}
-                    </p>
-                    <a className="space-y-5">
-                      <h4 className="text-2xl font-bold tracking-tight capitalize">
-                        Stacks
-                      </h4>
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-3">
-                        {work.stacks.map((stack, i) => (
-                          <a
-                            key={stack}
-                            className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md capitalize"
-                          >
-                            {stack}
-                          </a>
-                        ))}{" "}
-                      </div>
-                    </a>
-                    <a
-                      href={work.URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none rounded-md background capitalize w-[70%] mx-auto"
-                    >
-                      Visit Site
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* </a> */}
-              <div
-                className={`p-5  ${
-                  isMobile ? "block" : "hidden"
-                } md:hidden space-y-6`}
-              >
-                <h4 className="text-2xl font-bold tracking-tight capitalize">
-                  {work.name}
-                </h4>
-
-                <p className="mb-3 w-[300px] h-30 card-text">
-                  {work.description}
-                </p>
-                <a className="space-y-5">
-                  <h4 className="text-2xl font-bold tracking-tight capitalize">
-                    Stacks
-                  </h4>
-                  <div className="grid grid-cols-6 gap-x-5 gap-y-3">
-                    {work.stacks.map((stack, i) => (
-                      <a
-                        key={stack}
-                        className=" py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none bg-[#090909] rounded-md w-fit"
-                      >
-                        <SVGS name={stack} />
-                      </a>
-                    ))}{" "}
-                  </div>
-                </a>
-                <a
-                  href={work.URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-3 px-4 font-medium text-center text-white focus:ring-4 focus:outline-none rounded-md background capitalize "
-                >
-                  Visit Site
-                </a>
-              </div>
+            <div key={work.name}>
+              <Project work={work} />
             </div>
           ))}
         </div>
-        <article className="w-full flex justify-center mt-20">
+        {/* <article className="w-full flex justify-center mt-20">
           <button className="group bg-transparent py-2 px-4 uppercase inline-flex items-center">
             View all projects
             <svg
@@ -156,7 +51,7 @@ function Projects() {
               ></path>
             </svg>
           </button>
-        </article>
+        </article> */}
       </div>
     </section>
   );

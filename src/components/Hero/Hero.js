@@ -1,9 +1,32 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import { fromBottom, heroImage, scaleUp } from "../../../animations/animation";
+// import { fromBottom, heroImage, scaleUp } from "../../../animations/animation";
 
 function Hero() {
+  const fromBottom = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeInOut" },
+    },
+  };
+
+  const scaleUp = {
+    hidden: {
+      y: 100,
+      scale: 0,
+    },
+    animate: {
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeInOut" },
+    },
+  };
   const [degree, setDegree] = useState(210);
   setTimeout(() => {
     setInterval(() => {
@@ -15,6 +38,16 @@ function Hero() {
     }, 1000);
   }, 5000);
 
+  const fromBottomControls = useAnimation();
+  const scaleUpControls = useAnimation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      fromBottomControls.start("animate");
+      scaleUpControls.start("animate");
+    }, 1000);
+  }, []);
+
   /* Linear Gradient Border for hero image */
   const borderGradient = {
     background: `linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
@@ -23,46 +56,24 @@ function Hero() {
   };
 
   return (
-    <motion.section
-      initial="initial"
-      animate="animate"
-      transition="transition"
-      className="flex flex-col-reverse md2:flex-row md2:justify-between justify-center items-center w-full min-h-[100vh]  pt-[80px] pb-20 px-5 md:px-[40px] lg:px-[70px] "
-    >
-      {/* <video
-        src="/video/vid.mp4"
-        className="absolute t-0 inset-x-0 "
-        autoPlay
-        loop
-        muted
-      ></video> */}
+    <motion.section className="flex flex-col-reverse md2:flex-row md2:justify-between justify-center items-center w-full min-h-[100vh]  pt-[80px] pb-20 px-5 md:px-[40px] lg:px-[70px] ">
       <div
-        initial="hidden"
-        animate="animate"
         variants={fromBottom}
+        animate={fromBottomControls}
         className="w-fit text-center md2:text-left leading-loose md2:mr-[100px] mt-[40px] md2:mt-0"
       >
         <motion.h1
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              delay: 0.2,
-              // duration: 0.5,
-              ease: "easeInOut",
-              type: "spring",
-              stiffness: 300,
-            },
-          }}
+          variants={fromBottom}
+          animate={fromBottomControls}
           className="text-7xl md2:text-8xl lg:text-9xl"
         >
           Howdy!{" "}
         </motion.h1>
-        <motion.h1 className="text-7xl md2:text-8xl lg:text-9xl">
+        <motion.h1
+          variants={fromBottom}
+          animate={fromBottomControls}
+          className="text-7xl md2:text-8xl lg:text-9xl"
+        >
           I&apos;m Chimeruzee.
         </motion.h1>
         <h4 className="flex items-center w-fit  font-bold max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
@@ -80,9 +91,10 @@ function Hero() {
 
       <div className="max-w-[250px] min-w-[250px] md2:max-w-[350px] md2:min-w-[350px] lg:max-w-[400px] lg:min-w-[400px] object-contain ">
         <motion.div
+          variants={scaleUp}
+          animate={scaleUpControls}
           className="border-[7px] md2:border-[10px] border-white rounded-full object-cover flex justify-center items-center p-[7px] md2:p-[10px] "
           style={borderGradient}
-          variants={scaleUp}
         >
           <Image
             src="/images/meruz-bw.jpg"
