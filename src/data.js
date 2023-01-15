@@ -8,15 +8,7 @@ export const data = [
     name: "cloudnotte schools - school search engine",
     stacks: ["react", "next", "graphql", "node"],
   },
-  {
-    URL: "#",
-    description:
-      "A designer's portfolio where you showcase your works online and get clients who likes your work buzzing in your mailbox, currently down but will be up at soonest",
-    imgURL:
-      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
-    name: "Zichygraphs - designer's portfolio",
-    stacks: ["react", "node", "mongodb"],
-  },
+
   {
     URL: "https://tronix-web.netlify.app",
     description:
@@ -34,5 +26,14 @@ export const data = [
       "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
     name: "Vendly - Social Commerce Platform",
     stacks: ["react", "next", "node", "firebase"],
+  },
+  {
+    URL: "#",
+    description:
+      "A designer's portfolio where you showcase your works online and get clients who likes your work buzzing in your mailbox, currently down but will be up at soonest",
+    imgURL:
+      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
+    name: "Zichygraphs - designer's portfolio",
+    stacks: ["react", "node", "mongodb"],
   },
 ];
