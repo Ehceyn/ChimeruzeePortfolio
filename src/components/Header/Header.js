@@ -95,17 +95,17 @@ function Header() {
         </div>
 
         {/* HAMBUGER MENU */}
-        {/* <motion.nav
+        <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
           custom={height}
           ref={containerRef}
-          className="md:hidden flex items-center w-fit nav-hamburger"
+          className="hidden items-center w-fit nav-hamburger"
         >
           <motion.div className="nav-background" variants={sidebar} />
-          <Navigation /> */}
-        {/* <MenuToggle toggle={() => toggleOpen()} /> */}
-        {/* </motion.nav> */}
+          <Navigation />
+          {/* <MenuToggle toggle={() => toggleOpen()} /> */}
+        </motion.nav>
       </div>
     </header>
   );
