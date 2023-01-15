@@ -86,7 +86,7 @@ function Header() {
             title="resume"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1hPpP44F-gs2xs_Lax_930MiJSpsTbr0T/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wH5NuqyXcmcRRKFR3gFiwtNXloBlwBXz/view?usp=sharing"
             className="cursor-pointer hover:bg-[#2020205b] p-4 hover:rounded-lg hover:scale-105 active:scale-100 transition-all duration-200"
           >
             {" "}

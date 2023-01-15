@@ -76,11 +76,13 @@ function Hero() {
         >
           I&apos;m Chimeruzee.
         </motion.h1>
-        <h4 className="flex items-center w-fit  font-bold max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
-          I&apos;m a creative Frontend developer. An innovative and good team
-          player who loves going extra mile to deliver a project. I make things
-          work.
-        </h4>
+        <p className="flex text-white items-center w-fit max-w-[800px] h-fit py-5 text-2xl md2:text-2xl md2:px-0 px-5">
+          A skilled Frontend developer, I bring creativity and innovation to
+          every project. I am a dedicated team player who consistently goes
+          above and beyond to deliver exceptional results. With a passion for
+          problem-solving, I am able to make things work efficiently and
+          effectively.
+        </p>
         <button
           type="button"
           className="text-white buttonGrad mt-5 focus:outline-none uppercase rounded-2xl w-[180px] py-4 text-center"

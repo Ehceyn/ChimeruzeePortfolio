@@ -11,27 +11,31 @@ function About() {
           </article>
           <div className="w-full flex flex-col items-center space-y-5 px-7 md2:px-0">
             <p className="text-[#999] text-2xl max-w-[500px] text-center ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam nemo eveniet autem libero praesentium sit assumenda est
-              deleniti exercitationem dolorem accusamus voluptates maxime
-              blanditiis dolores voluptas voluptatem, veritatis tempore
-              repudiandae. deleniti exercitationem dolorem accusamus voluptates
-              maxime blanditiis dolores voluptas voluptatem, veritatis tempore
-              repudiandae.
+              Meet Chimeruzee Chidum, a highly motivated and hardworking
+              individual who always brings his A-game to the team. With his
+              quick learning abilities and innovative thinking, he&apos;s always
+              ready to take on new challenges and tackle complex problems with
+              ease. And with his excellent communication and interpersonal
+              skills, he&apos;s the ultimate team player.
             </p>
             <p className="text-[#999] text-2xl max-w-[500px] text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam nemo eveniet autem libero praesentium sit assumenda est
-              deleniti exercitationem dolorem accusamus voluptates maxime
-              blanditiis dolores voluptas voluptatem, veritatis tempore
-              repudiandae.
+              When it comes to tech, Chimeruzee is a real pro. He&apos;s built
+              several solutions using React, Nextjs, Node and Graphql, and has a
+              knack for working seamlessly with teams. But don&apos;t let his
+              love for all things tech fool you, he&apos;s also a real people
+              person and loves chatting about business and tech over a cup of
+              coffee.
             </p>
             <p className="text-[#999] text-2xl max-w-[500px] text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam nemo eveniet autem libero praesentium sit assumenda est
-              deleniti exercitationem dolorem accusamus voluptates maxime
-              blanditiis dolores voluptas voluptatem, veritatis tempore
-              repudiandae.
+              In his free time, you&apos;ll find Chimeruzee swimming, traveling,
+              listening to gospel music, singing (although he&apos;ll be the
+              first to admit his singing voice is better suited for frogs than
+              humans 😂), playing Scrabble, table tennis and football (although
+              he&apos;s more of a spectator than a player 😌). Bottom line,
+              Chimeruzee is a jovial, relatable guy who will quickly become a
+              valuable asset to any team. Give him a chance and you&apos;ll see
+              for yourself why we&apos;re convinced you&apos;ll love him too
+              ❤️😎
             </p>
           </div>
         </section>

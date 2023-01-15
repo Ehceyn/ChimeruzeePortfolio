@@ -77,7 +77,7 @@ function Technologies() {
             </div>
           ))}
         </motion.div>
-        <article className="w-full flex justify-center mt-20">
+        {/* <article className="w-full flex justify-center mt-20">
           <button className="group bg-transparent py-2 px-4 uppercase inline-flex items-center">
             View all technologies
             <svg
@@ -93,7 +93,7 @@ function Technologies() {
               ></path>
             </svg>
           </button>
-        </article>
+        </article> */}
       </div>
     </section>
   );
