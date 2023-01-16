@@ -52,7 +52,7 @@ function Header() {
             Contact
           </article>
         </nav> */}
-        <div className="hidden md:flex items-center w-fit h-[inherit] space-x-4">
+        <div className="flex items-center w-fit h-[inherit] space-x-4">
           <a
             title="github"
             target="_blank"
