@@ -27,6 +27,16 @@ export const data = [
     name: "Vendly - Social Commerce Platform",
     stacks: ["react", "next", "node", "firebase"],
   },
+
+  {
+    URL: "https://duplicates-remover.vercel.app",
+    description:
+      "A web app that allows users to remove duplicate characters from a text",
+    imgURL:
+      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
+    name: "Duplicate Character Remover",
+    stacks: ["react", "typescript"],
+  },
   {
     URL: "#",
     description:
