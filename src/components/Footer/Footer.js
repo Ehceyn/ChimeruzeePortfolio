@@ -64,7 +64,7 @@ export default function Footer() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1wH5NuqyXcmcRRKFR3gFiwtNXloBlwBXz/view?usp=sharing"
+            href="https://docs.google.com/document/d/1JHbh0KdfUEPxOsAAUygQcoH9JzVn7p8JQIcl9InTSec/edit?usp=sharing"
             className="cursor-pointer hover:underline capitalize hover:underline-offset-1 w-fit"
           >
             Download Resume
