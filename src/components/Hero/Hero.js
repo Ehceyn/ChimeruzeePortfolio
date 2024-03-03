@@ -55,6 +55,15 @@ function Hero() {
 ) padding-box`,
   };
 
+  // Smooth scroll
+  const scrollToTop = () => {
+    const contact = document.querySelector("#contact");
+    contact.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <motion.section className="flex flex-col-reverse md2:flex-row md2:justify-between justify-center items-center w-full min-h-[100vh]  pt-[80px] pb-20 px-5 md:px-[40px] lg:px-[70px] ">
       <div
@@ -84,6 +93,7 @@ function Hero() {
           effectively.
         </p>
         <button
+          onClick={scrollToTop}
           type="button"
           className="text-white buttonGrad mt-5 focus:outline-none uppercase rounded-2xl w-[180px] py-4 text-center"
         >

@@ -76,7 +76,11 @@ function Contact() {
   };
 
   return (
-    <section className=" w-full min-h-[80vh] h-fit mb-20 ">
+    <section
+      id="contact"
+      name="contact"
+      className=" w-full min-h-[80vh] h-fit mb-20 "
+    >
       <AlertModal
         display={displayAlert}
         onClickButton={() => setDisplayAlert(false)}
