@@ -27,31 +27,31 @@ function Hero() {
       transition: { duration: 0.5, ease: "easeInOut" },
     },
   };
-  const [degree, setDegree] = useState(210);
-  setTimeout(() => {
-    setInterval(() => {
-      if (degree <= 360) {
-        setDegree(degree + 5);
-      } else {
-        setDegree(0);
-      }
-    }, 1000);
-  }, 5000);
+  // const [degree, setDegree] = useState(210);
+  // setTimeout(() => {
+  //   setInterval(() => {
+  //     if (degree <= 360) {
+  //       setDegree(degree + 5);
+  //     } else {
+  //       setDegree(0);
+  //     }
+  //   }, 1000);
+  // }, 5000);
 
   const fromBottomControls = useAnimation();
   const scaleUpControls = useAnimation();
 
-  useEffect(() => {
-    setTimeout(() => {
-      fromBottomControls.start("animate");
-      scaleUpControls.start("animate");
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     fromBottomControls.start("animate");
+  //     scaleUpControls.start("animate");
+  //   }, 1000);
+  // }, []);
 
   /* Linear Gradient Border for hero image */
   const borderGradient = {
-    background: `linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
-) border-box, linear-gradient(${degree}deg, #f27121, #e94057, #8a2387
+    background: `linear-gradient(210deg, #f27121, #e94057, #8a2387
+) border-box, linear-gradient(210deg, #f27121, #e94057, #8a2387
 ) padding-box`,
   };
 
