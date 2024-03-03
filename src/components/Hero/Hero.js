@@ -58,9 +58,9 @@ function Hero() {
   // Smooth scroll
   const scrollToTop = () => {
     const contact = document.querySelector("#contact");
-    contact.scrollTo({
-      top: 0,
+    contact.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   };
 
