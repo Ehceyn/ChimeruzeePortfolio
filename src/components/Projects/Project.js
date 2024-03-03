@@ -85,9 +85,11 @@ const Project = ({ work }) => {
               </div> */}
       {/* </a> */}
       <div className={`p-8 space-y-6`}>
-        <h4 className="text-2xl font-bold tracking-tight capitalize">
-          {work.name}
-        </h4>
+        <a href={work.URL} target="_blank" rel="noopener noreferrer">
+          <h4 className="text-2xl font-bold hover:underline tracking-tight capitalize">
+            {work.name}
+          </h4>
+        </a>
 
         <p className="mb-3 h-30 card-text">{work.description}</p>
         <a className="space-y-5">
