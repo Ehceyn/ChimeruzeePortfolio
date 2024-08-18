@@ -1,5 +1,13 @@
 export const data = [
   {
+    URL: "https://www.cloudnotte.com/",
+    description: "A Comprehensive school management system",
+    imgURL:
+      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
+    name: "Cloudnotte - school management system",
+    stacks: ["react", "next", "graphql", "node"],
+  },
+  {
     URL: "https://www.cloudnotte.com/schools",
     description:
       "A search engine where prospective customers search for good schools around them. They can also access the school's website and process admission directly online without the need for physical procedures.",
@@ -24,6 +32,15 @@ export const data = [
     imgURL:
       "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
     name: "Sorom - Travel app",
+    stacks: ["react", "next", "graphql", "node"],
+  },
+  {
+    URL: "https://www.farmersuccess.com",
+    description:
+      "Farmersucces is a comprehensive farming app that simplifies farm management with tools/services for crop tracking, livestock monitoring, and equipment utilization",
+    imgURL:
+      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
+    name: "FarmerSucces - comprehensive farming companion",
     stacks: ["react", "next", "graphql", "node"],
   },
 
