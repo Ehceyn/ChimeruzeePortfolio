@@ -1,11 +1,12 @@
 export const data = [
   {
-    URL: "https://www.cloudnotte.com/",
-    description: "A Comprehensive school management system",
+    URL: "https://cloudnotte.com",
+    description:
+      "A school manangement software, it is designed to help schools automate thier workflows, support virtual learning, and improve collaboration between teachers and students",
     imgURL:
       "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
-    name: "Cloudnotte - school management system",
-    stacks: ["react", "next", "graphql", "node"],
+    name: "Cloudnotte - School Management System",
+    stacks: ["react", "graphql", "node"],
   },
   {
     URL: "https://www.cloudnotte.com/schools",
@@ -16,15 +17,7 @@ export const data = [
     name: "Cloudnotte schools - school search engine",
     stacks: ["react", "next", "graphql", "node"],
   },
-  {
-    URL: "https://app.cloudnotte.com",
-    description:
-      "A school manangement software, it is designed to help schools automate thier workflows, support virtual learning, and improve collaboration between teachers and students",
-    imgURL:
-      "https://res.cloudinary.com/zichygraphs/image/upload/v1659715472/test1_vqcd9r.jpg",
-    name: "Cloudnotte - School Management System",
-    stacks: ["react", "graphql", "node"],
-  },
+
   {
     URL: "https://www.sorom.co",
     description:
